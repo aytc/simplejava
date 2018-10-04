@@ -1,0 +1,56 @@
+#The Interface Body#
+-The interface body can contain abstract methods, default methods, and static methods
+-Default methods are defined with the default modifier, and static methods with the static keyword
+-A static method can be declared in an interface but it must have a body.
+-All constant values defined in an interface are implicitly public, static, and final
+-protected is not permitted when declaring a method of an interface
+-you cannot use transient, volatile, or synchronized in a member declaration in an interface
+-you may not use the private and protected specifiers when declaring members of an interface.
+-statik yöntem sadece sınıfın kendisi ile ilgilidir. Onlar sınıfın adıyla erişilebilir oldukları anlamına gelir. 
+Bu yüzden arayüzlerdeki yöntem statik olamaz
+-interface methodlar final olamaz.
+interface methods cannot be static
+
+#Char
+Tırnak ile başlatıldığında '\ u' ile başlamalıdır.
+
+ #public > protected > default > private
+Erişim değiştiricileri, hangi örneklerin, hangi sınıflara erişemediklerini dikte eder.
+Yöntemler ve değişkenler toplu olarak üye olarak bilinir. Yöntem ve değişken üyelere tam olarak aynı şekilde erişim kontrolü verilir.
+
+private, bir üyeyi yalnızca kendi sınıfından erişilebilir kılar
+
+Korumalı, bir üyeyi yalnızca aynı paketin içindeki sınıflara veya sınıfa ait alt sınıfa erişilebilir yapar
+
+varsayılan erişim korunmaya çok benzer (farklılığı belirlediğinizden emin olun) varsayılan erişim, bir üyeyi yalnızca aynı paketteki sınıflara erişebilir yapar.
+
+kamu, ait oldukları paketden bağımsız olarak diğer tüm sınıfların üyeye erişebileceği anlamına gelir (sınıfın kendisi görünür olduğu varsayılarak)
+
+final, bir sınıfı genişletmeyi imkansız kılar, bir yönteme uygulandığında, 
+bir alt sınıfta bir yöntemin geçersiz kılınmasını önler, bir değişkene uygulandığında, 
+bir değişken başlatıldıktan sonra bir değişkenin yeniden başlatılmasını imkânsız kılar
+
+soyut uygulanmayan bir yöntemi beyan eder.
+
+geçici, bir değişkenin bir nesnenin kalıcı halinin bir parçası olmadığını belirtir.
+
+Uçucu, bir iş parçacığının, değişkeni her eriştiğinde alanın çalışma kopyasını ana kopya ile uzlaştırması gerektiğini belirtir.
+
+
+#Java's widening conversions are:
+
+- From a byte to a short, an int, a long, a float, or a double.
+
+- From a short, an int, a long, a float, or a double.
+
+- From a char to an int, a long, a float, or a double.
+
+- From an int to a long, a float, or a double.
+
+- From a long to a float, or a double.
+
+- From a float to a double.
+
+
+#Correct Cause of Compilation Failure is Class Can Not Be Declare As protected Only methode Can Be Declare As protected.
+
